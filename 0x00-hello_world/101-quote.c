@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * main - prints "and that piecs of art of is useful" 
+ * main - prints "and that piecs of art is useful"
  * - Dora korper, 2015-10-19",
  * Return: Always 1,
  */
