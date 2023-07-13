@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 /**
  * main - prints "and that piecs of art of art is useful" - Dora korper, 2015-10-19",
