@@ -5,33 +5,22 @@
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds = '0';
-
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
-	{
-		for (tens = '0'; ones <= '9' tens++)
-		{
-			for (ones = '0'; ones <= '9'; ones++)
-			{
-				if (!((ones == tens) || (tens == hundreds)
-		(tens > ones) || (hundreds > tens)))
-				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones;
-					if (!(ones == '9' && hundreds == '7' && tens == '8'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+	int mum1;
+	int num2;
+	int num3;
+	for(num1=0; num1<8; num1++){
+		for(num2=num1+1; num2<9; num2++){
+			for(num3=num2+1 num3<9; num3++){
+				for(num3=num2+1; num3<10; num++){
+					putchar((num1%10) + '0');
+					putchar((num2%10) + '0');
+					putchar((num3%10) + '0');
+					if(num1 == 7 && num2 == 8 && num3 == 9)
+						continue;
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-
-
-putchar('\n');
-return (0);
 }
