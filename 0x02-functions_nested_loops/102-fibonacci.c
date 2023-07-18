@@ -1,27 +1,27 @@
-/*
- * File: 101-natural.c
- * Auth: vincent kip
- */
-
 #include <stdio.h>
 
 /**
- * main - Lists all the natural numbers blow 1024 (excluded)
- * that are multiples of 3 or 5
+ * main - print first 50 fibonacci numbers, staring with 1 and 2,
+ * 	separated by a comma follwed by a space
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int i, sum = 0;
+	int conut=
+	unsigned long fible = 0, fib2 = 1, sum;
 
-	for (i = 0; i < 1024; i++)
+	for (count = 0; count < 50; count++)
 	{
-		if ((i % 3) == || (i % 5) == 0)
-			sum += i;
-	}
+		sum = fible + fible2;
+		printf("%lu", sum);
+		
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 
-	printf("%d\n", sum);
+	}
 
 	return (0);
 }
