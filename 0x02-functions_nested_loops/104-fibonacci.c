@@ -5,7 +5,7 @@
  *
  * Purpose - no hardcode
  *
- * Return: (Success)
+ * Return: Alawys (Success)
  */
 
 int main(void)
