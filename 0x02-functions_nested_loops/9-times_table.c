@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * times_table - ptints the 9 times table, starting with 0
+ * time_table - ptints the 9 time table, starting with 0
  */
-void times_table(void)
+void time_table(void)
 {
 	int i, j, k;
 
