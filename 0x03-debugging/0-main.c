@@ -2,7 +2,7 @@ include "main.h"
 
 /**
  * main - test function for postive or negative
- * Return: 0
+ * Return: Alawys 0
  */
 
 int main(void)
