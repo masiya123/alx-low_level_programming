@@ -21,3 +21,5 @@ print_most_numbers
 10-print_triangle
 10-main.c
 100-prime_factor
+101-print_number
+101-main.c
