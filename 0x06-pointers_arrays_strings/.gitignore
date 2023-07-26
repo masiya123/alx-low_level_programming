@@ -2,8 +2,6 @@
 0-strcat
 1-main.c
 1-strncat
-2-strncpy
-2-main.c
 3-strcmp
 3-main.c
 4-main.c
@@ -22,3 +20,5 @@
 103-infinite_add
 104-main.c
 104-print_buffer
+3-strcmp
+3-main.c
