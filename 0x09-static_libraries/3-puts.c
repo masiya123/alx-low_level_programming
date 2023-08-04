@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - program prints a string to 
+ * _puts - program prints a string to
  * @str: the string to be be printed.
  *
  * Return: the length of the string

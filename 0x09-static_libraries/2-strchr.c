@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr - program entry point 
+ * _strchr - program entry point
  *
  * @c: input value
  *
