@@ -6,7 +6,7 @@
  *
  * @array: array to execute function on
  * @size: is the size of the array
- * @action:  is a pointer to the function 
+ * @action: is a pointer to the function
  *
  * Return: void
  */
