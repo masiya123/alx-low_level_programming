@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - function that prints all of the 
+ * print_all - function that prints all of the
  * arguments when specified
  * @format: specifies the necessary operations
  * Return: void
