@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * _strlen - string of length to be found
- * @str: string to find the length of 
+ * @str: string to find the length of
  * Return: length of string
  */
 unsigned int _strlen(char *str)
@@ -14,7 +14,7 @@ unsigned int _strlen(char *str)
 }
 
 /**
- * add_node_end - function that adds a new node at the end 
+ * add_node_end - function that adds a new node at the end
  * @head: double pointer to a linked list
  * @str: string to add to the new nod
  * Return: pointer to the new node
