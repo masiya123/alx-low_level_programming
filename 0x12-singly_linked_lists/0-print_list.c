@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_list - print all element in a sigly linked list 
+ * print_list - print all element in a sigly linked list
  * @h: head of the elements of counts
  * Return: the number of nodes in the list
  */
