@@ -4,7 +4,7 @@
 
 /**
 * main - Entey point
-* Return: Alway 0 (uccess)
+* Return: Alway 0 (success)
 */
 int main(void)
 {
