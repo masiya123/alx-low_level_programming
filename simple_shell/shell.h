@@ -164,7 +164,7 @@ int free_and_nullify(void **pointer);
 
 /* toem_atoi.c */
 int print_env(info_t *shell_info);
-char *get_env_var(info_t *shell_info, const char *var_name);
+char *get_env_var(info_t *shell_info, congcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hshst char *var_name);
 int set_env_var(info_t *shell_info);
 int unset_env_var(info_t *shell_info);
 int fill_env_list(info_t *shell_info);
