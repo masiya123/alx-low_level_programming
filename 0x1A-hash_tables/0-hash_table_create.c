@@ -1,30 +1,52 @@
+#include <stdlib.h>
+#include <string.h>
 #include "hash_tables.h"
 
 /**
  * hash_table_create - creates a hash table
- * @size: size of the array
+ * @size: the size of the array
  *
- * Return: pointer to the newly created hash table
+ * Return: a pointer to the newly created hash table, or NULL if something went wrong
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *new_table;
-    unsigned long int i;
+    hash_table_t *ht;
 
-    new_table = malloc(sizeof(hash_table_t));
-    if (new_table == NULL)
+    ht = malloc(sizeof(hash_table_t));
+    if (!ht)
         return (NULL);
-
-    new_table->size = size;
-    new_table->array = malloc(sizeof(hash_node_t *) * size);
-    if (new_table->array == NULL)
+    ht->size = size;
+    ht->array = calloc(size, sizeof(hash_node_t *));
+    if (!ht->array)
     {
-        free(new_table);
+        free(ht);
         return (NULL);
     }
+    return (ht);
+}
 
-    for (i = 0; i < size; i++)
-        new_table->array[i] = NULL;
+/**
+ * hash_table_destroy - frees the memory allocated for a hash table
+ * @ht: a pointer to the hash table to be destroyed
+ */
+void hash_table_destroy(hash_table_t *ht)
+{
+    unsigned long int i;
 
-    return (new_table);
+    for (i = 0; i < ht->size; i++)
+    {
+        hash_node_t *node = ht->array[i];
+        hash_node_t *next;
+
+        while (node)
+        {
+            next = node->next;
+            free(node->key);
+            free(node->value);
+            free(node);
+            node = next;
+        }
+    }
+    free(ht->array);
+    free(ht);
 }
